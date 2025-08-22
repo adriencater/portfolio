@@ -1,8 +1,11 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+
 body { 
-    font-family: system-ui;
+    font-family: "Public Sans", sans-serif;
     background-color: #F1357A;
-    background: linear-gradient(red,blue);
+    background: linear-gradient(rgb(86, 16, 69),rgb(52, 96, 162));
     color: #FFF;
 
     min-height: 100vh;
