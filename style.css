@@ -5,7 +5,6 @@
 body { 
     font-family: "Public Sans", sans-serif;
     background-color: #F1357A;
-    background: linear-gradient(rgb(86, 16, 69),rgb(52, 96, 162));
     color: #FFF;
 
     min-height: 100vh;
