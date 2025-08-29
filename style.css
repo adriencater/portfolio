@@ -1,19 +1,16 @@
+ /* - - - - - - - - - - - - - - - - - - - - - - - - */
+/* - - IMPORT - - - - - - - - - - - - - - - - - -  */
+@import url("reset.css");
+@import url("utility.css");
 
+
+
+
+ /* - - - - - - - - - - - - - - - - - - - - - - - - */
+/* - - TYPOGRAPHIE - - - - - - - - - - - - - - - - */
 @import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
-
-body { 
-    font-family: "Public Sans", sans-serif;
-    background-color: #F1357A;
-    color: #FFF;
-
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-
-}
+html{ font-family: "Public Sans", sans-serif; }
 
 h1{ 
     font-size: 12vw;
@@ -23,6 +20,33 @@ h2{
     max-width: 25ch;
 }
 
+
+
+
+ /* - - - - - - - - - - - - - - - - - - - - - - - - */
+/* - - COLOR - - - - - - - - - - - - - - - - - - - */
+body { 
+    background-color: blue;
+    color: #FFF;
+}
 a { color: inherit;}
 
-img { max-width: 100%;}
+
+
+
+ /* - - - - - - - - - - - - - - - - - - - - - - - - */
+/* - - MISE EN PAGE - - - - - - - - - - - - - - -  */
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+
+
+ /* - - - - - - - - - - - - - - - - - - - - - - - - */
+/* - - MODULES - - - - - - - - - - - - - - - - - - */
+
