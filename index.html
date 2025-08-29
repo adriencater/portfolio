@@ -25,15 +25,15 @@
 
     </header>
 
-    <nav id="navMain">
-        <a href="#Alpha" class="nav-link">Alpha</a>
-        <a href="#Bravo" class="nav-link">Bravo</a>
-        <a href="#Charlie" class="nav-link">Charlie</a>
+    <nav id="main-menu">
+        <a href="#Alpha" class="menu-item">Alpha</a>
+        <a href="#Bravo" class="menu-item">Bravo</a>
+        <a href="#Charlie" class="menu-item">Charlie</a>
     </nav>
 
     <main>
 
-        <section id="Alpha">
+        <section id="Alpha" class="scrollspy">
             <h1>Alpha
                 <a href="#top" class="topNav">↑</a>
             </h1>
@@ -44,7 +44,7 @@
             </div>
         </section>
 
-        <section id="Bravo">
+        <section id="Bravo" class="scrollspy">
             <h1>Bravo
                 <a href="#top" class="topNav">↑</a>
             </h1>
@@ -61,7 +61,7 @@
  
         </section>
 
-        <section id="Charlie">
+        <section id="Charlie" class="scrollspy">
             <h1>Charlie
                 <a href="#top" class="topNav">↑</a>
             </h1>
@@ -69,18 +69,18 @@
  
     </main>
 
-<script src="https://unpkg.com/@sidsbrmnn/scrollspy@1.x/dist/scrollspy.min.js"></script>
-<!-- <script src="/path/to/dist/scrollspy.min.js"></script> -->
+<!-- https://github.com/kimyvgy/simple-scrollspy?tab=readme-ov-file#using-simple-scrollspyminjs-file -->
+<!-- https://github.com/kimyvgy/simple-scrollspy/releases/download/v2.5.3/simple-scrollspy.min.js -->
+<script src="simple-scrollspy.min.js"></script>
 <script>
     window.onload = function () {
-        scrollSpy('#navMain', {
-            sectionSelector: 'section',
-            targetSelector: '.nav-link',
-            offset: 100
-        });
+      scrollSpy('#main-menu', {
+        sectionClass: '.scrollspy',
+        menuActiveTarget: '.menu-item',
+        offset:0
+      })
     }
-</script>
-
+  </script>
 
 <link href="lightbox/css/lightbox.css" rel="stylesheet" />
 <script src="lightbox/js/lightbox-plus-jquery.js"></script>
