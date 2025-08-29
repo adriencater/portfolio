@@ -25,10 +25,10 @@
 
     </header>
 
-    <nav>
-        <a href="#Alpha">Alpha</a>
-        <a href="#Bravo">Bravo</a>
-        <a href="#Charlie">Charlie</a>
+    <nav id="navMain">
+        <a href="#Alpha" class="nav-link">Alpha</a>
+        <a href="#Bravo" class="nav-link">Bravo</a>
+        <a href="#Charlie" class="nav-link">Charlie</a>
     </nav>
 
     <main>
@@ -48,6 +48,17 @@
             <h1>Bravo
                 <a href="#top" class="topNav">↑</a>
             </h1>
+
+            <div class="gallery">
+
+                <div><a href="chaton_big.jpg" data-lightbox="bravo"><img src="chaton_icon.jpg" alt=""></a></div>
+                <div><a href="chaton_big.jpg" data-lightbox="bravo"><img src="chaton_icon.jpg" alt=""></a></div>
+                <div><a href="chaton_big.jpg" data-lightbox="bravo"><img src="chaton_icon.jpg" alt=""></a></div>
+                <div><a href="chaton_big.jpg" data-lightbox="bravo"><img src="chaton_icon.jpg" alt=""></a></div>
+                <div><a href="chaton_big.jpg" data-lightbox="bravo"><img src="chaton_icon.jpg" alt=""></a></div>
+                
+            </div><!-- /.gallery -->
+ 
         </section>
 
         <section id="Charlie">
@@ -58,6 +69,21 @@
  
     </main>
 
+<script src="https://unpkg.com/@sidsbrmnn/scrollspy@1.x/dist/scrollspy.min.js"></script>
+<!-- <script src="/path/to/dist/scrollspy.min.js"></script> -->
+<script>
+    window.onload = function () {
+        scrollSpy('#navMain', {
+            sectionSelector: 'section',
+            targetSelector: '.nav-link',
+            offset: 100
+        });
+    }
+</script>
+
+
+<link href="lightbox/css/lightbox.css" rel="stylesheet" />
+<script src="lightbox/js/lightbox-plus-jquery.js"></script>
 
 </body>
 </html>
