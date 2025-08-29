@@ -35,15 +35,42 @@ a { color: inherit;}
 
 
  /* - - - - - - - - - - - - - - - - - - - - - - - - */
+/* - - UI/UX - - - - - - - - - - - - - - - - - - - */
+html {
+    scroll-behavior: smooth;
+}
+
+*:has(.topNav){ position: relative; }
+a.topNav{
+    font-size: 1rem;
+    position: absolute;
+    right: 2rem;
+    top: 1rem;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 99;
+}
+
+
+ /* - - - - - - - - - - - - - - - - - - - - - - - - */
 /* - - MISE EN PAGE - - - - - - - - - - - - - - -  */
 
-header{
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+
+header .hero { 
+    height: calc(100vh - 3rem);
 }
+
+nav { 
+    height: 3rem;
+    justify-content: center;
+}
+
+
+
+
 
 section{
     border-top: 1px solid white;
@@ -58,7 +85,6 @@ section{
 
 nav{
     background-color: #0003;
-
     display: flex;
     width: 100%;
 }
@@ -69,3 +95,37 @@ nav a {
 nav a:hover{
     background-color: #0006;
 }
+
+
+/* .hero */
+
+.hero {
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hero .image,
+.hero .texte{ }
+
+.hero .image { 
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+}
+.hero .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero .texte {
+    background-color: #0004;
+    z-index: 2;
+}
+

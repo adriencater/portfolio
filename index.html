@@ -8,25 +8,35 @@
 </head>
 <body>
     
-    <header>
+    <header id="top">
 
         <div class="hero">
-            <h1>Chaton Loutre</h1>
-            <img src="chaton_icon.jpg" alt="">
-        </div>
 
-        <nav>
-            <a href="#Alpha">Alpha</a>
-            <a href="#Bravo">Bravo</a>
-            <a href="#Charlie">Charlie</a>
-        </nav>
+            <div class="image">
+                <img src="chaton_icon.jpg" alt="">
+            </div><!-- .image -->
+
+            <div class="texte">
+                <h1>Chaton Loutre</h1>
+                <p>bla bla bla.</p>
+            </div><!-- .texte -->
+
+        </div><!-- .hero -->
 
     </header>
+
+    <nav>
+        <a href="#Alpha">Alpha</a>
+        <a href="#Bravo">Bravo</a>
+        <a href="#Charlie">Charlie</a>
+    </nav>
 
     <main>
 
         <section id="Alpha">
-            <h1>Alpha</h1>
+            <h1>Alpha
+                <a href="#top" class="topNav">↑</a>
+            </h1>
             <div class="row">
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est, impedit corrupti obcaecati repudiandae quae voluptas sunt rerum harum veniam quia ducimus quod blanditiis magni deserunt, at culpa aperiam. Architecto, esse!</p>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid fuga provident, officiis dolorum, dolores corporis nulla dolor laudantium quidem quam mollitia necessitatibus eos praesentium commodi sunt consectetur minima? Distinctio, blanditiis?</p>
@@ -35,11 +45,15 @@
         </section>
 
         <section id="Bravo">
-            <h1>Bravo</h1>
+            <h1>Bravo
+                <a href="#top" class="topNav">↑</a>
+            </h1>
         </section>
 
         <section id="Charlie">
-            <h1>Charlie</h1>
+            <h1>Charlie
+                <a href="#top" class="topNav">↑</a>
+            </h1>
         </section>
  
     </main>
