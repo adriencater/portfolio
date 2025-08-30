@@ -13,11 +13,11 @@
 html{ font-family: "Public Sans", sans-serif; }
 
 h1{ 
-    font-size: 12vw;
+	font-size: 12vw;
 }
 h2{
-    text-align: center;
-    max-width: 25ch;
+	text-align: center;
+	max-width: 25ch;
 }
 
 
@@ -26,8 +26,8 @@ h2{
  /* - - - - - - - - - - - - - - - - - - - - - - - - */
 /* - - COLOR - - - - - - - - - - - - - - - - - - - */
 body { 
-    background-color: blue;
-    color: #FFF;
+	background-color: blue;
+	color: #FFF;
 }
 a { color: inherit;}
 
@@ -37,22 +37,22 @@ a { color: inherit;}
  /* - - - - - - - - - - - - - - - - - - - - - - - - */
 /* - - UI/UX - - - - - - - - - - - - - - - - - - - */
 html {
-    scroll-behavior: smooth;
+	scroll-behavior: smooth;
 }
 
 *:has(.topNav){ position: relative; }
 a.topNav{
-    font-size: 1rem;
-    position: absolute;
-    right: 2rem;
-    top: 1rem;
+	font-size: 1rem;
+	position: absolute;
+	right: 2rem;
+	top: 1rem;
 }
 /* section{ padding-top: 3rem; } */
 
 nav {
-    position: sticky;
-    top: 0;
-    z-index: 99;
+	position: sticky;
+	top: 0;
+	z-index: 99;
 }
 
 .active { background-color: magenta; }
@@ -62,12 +62,12 @@ nav {
 
 
 header .hero { 
-    height: calc(100vh - 3rem);
+	height: calc(100vh - 3rem);
 }
 
 nav { 
-    height: 3rem;
-    justify-content: center;
+	height: 3rem;
+	justify-content: center;
 }
 
 
@@ -75,8 +75,8 @@ nav {
 
 
 section{
-    border-top: 1px solid white;
-    min-height: 100vh;
+	border-top: 1px solid white;
+	min-height: 100vh;
 }
 
 
@@ -86,56 +86,56 @@ section{
 /* - - MODULES - - - - - - - - - - - - - - - - - - */
 
 nav{
-    background-color: #0003;
-    display: flex;
-    width: 100%;
+	background-color: #0003;
+	display: flex;
+	width: 100%;
 }
 nav a {
-    padding: 1rem;
+	padding: 1rem;
 }
 
 nav a:hover{
-    background-color: #0006;
+	background-color: #0006;
 }
 
 
 /* .hero */
 
 .hero {
-    position: relative;
+	position: relative;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
 }
 
 .hero .image,
 .hero .texte{ }
 
 .hero .image { 
-    position: absolute;
-    top:0;
-    left:0;
-    width: 100%;
-    height: 100%;
+	position: absolute;
+	top:0;
+	left:0;
+	width: 100%;
+	height: 100%;
 }
 .hero .image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
 }
 
 .hero .texte {
-    background-color: #0004;
-    z-index: 2;
+	background-color: #0004;
+	z-index: 2;
 }
 
 
 /* Gallery */
 .gallery {
-    display: grid;
-    gap: 1rem;
-    grid-template-columns: repeat( auto-fill, minmax(min(15rem, 100%), 1fr) );
-    grid-auto-rows: 1fr;
+	display: grid;
+	gap: 1rem;
+	grid-template-columns: repeat( auto-fill, minmax(min(15rem, 100%), 1fr) );
+	grid-auto-rows: 1fr;
 }

@@ -1,85 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chaton Loutre</title>
-    <link rel="stylesheet" href="style.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Chaton Loutre</title>
+	<link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
-    <header id="top">
+	
+	<header id="top">
 
-        <div class="hero">
+		<div class="hero">
 
-            <div class="image">
-                <img src="chaton_icon.jpg" alt="">
-            </div><!-- .image -->
+			<div class="image">
+				<img src="chaton_icon.jpg" alt="">
+			</div><!-- .image -->
 
-            <div class="texte">
-                <h1>Chaton Loutre</h1>
-                <p>bla bla bla.</p>
-            </div><!-- .texte -->
+			<div class="texte">
+				<h1>Chaton Loutre</h1>
+				<p>bla bla bla.</p>
+			</div><!-- .texte -->
 
-        </div><!-- .hero -->
+		</div><!-- .hero -->
 
-    </header>
+	</header>
 
-    <nav id="main-menu">
-        <a href="#Alpha" class="menu-item">Alpha</a>
-        <a href="#Bravo" class="menu-item">Bravo</a>
-        <a href="#Charlie" class="menu-item">Charlie</a>
-    </nav>
+	<nav id="main-menu">
+		<a href="#Alpha" class="menu-item">Alpha</a>
+		<a href="#Bravo" class="menu-item">Bravo</a>
+		<a href="#Charlie" class="menu-item">Charlie</a>
+	</nav>
 
-    <main>
+	<main>
 
-        <section id="Alpha" class="scrollspy">
-            <h1>Alpha
-                <a href="#top" class="topNav">↑</a>
-            </h1>
-            <div class="row">
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est, impedit corrupti obcaecati repudiandae quae voluptas sunt rerum harum veniam quia ducimus quod blanditiis magni deserunt, at culpa aperiam. Architecto, esse!</p>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid fuga provident, officiis dolorum, dolores corporis nulla dolor laudantium quidem quam mollitia necessitatibus eos praesentium commodi sunt consectetur minima? Distinctio, blanditiis?</p>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam numquam ipsum libero, quae amet commodi. Cumque at dolorum temporibus harum, quo architecto voluptatum sint eaque quidem dolores minima, pariatur ullam?</p>
-            </div>
-        </section>
+		<section id="Alpha" class="scrollspy">
+			<h1>Alpha
+				<a href="#top" class="topNav">↑</a>
+			</h1>
+			<div class="row">
+				<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est, impedit corrupti obcaecati repudiandae quae voluptas sunt rerum harum veniam quia ducimus quod blanditiis magni deserunt, at culpa aperiam. Architecto, esse!</p>
+				<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid fuga provident, officiis dolorum, dolores corporis nulla dolor laudantium quidem quam mollitia necessitatibus eos praesentium commodi sunt consectetur minima? Distinctio, blanditiis?</p>
+				<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam numquam ipsum libero, quae amet commodi. Cumque at dolorum temporibus harum, quo architecto voluptatum sint eaque quidem dolores minima, pariatur ullam?</p>
+			</div>
+		</section>
 
-        <section id="Bravo" class="scrollspy">
-            <h1>Bravo
-                <a href="#top" class="topNav">↑</a>
-            </h1>
+		<section id="Bravo" class="scrollspy">
+			<h1>Bravo
+				<a href="#top" class="topNav">↑</a>
+			</h1>
 
-            <div class="gallery">
+			<div class="gallery">
 
-                <div><a href="chaton_big.jpg" data-lightbox="bravo"><img src="chaton_icon.jpg" alt=""></a></div>
-                <div><a href="chaton_big.jpg" data-lightbox="bravo"><img src="chaton_icon.jpg" alt=""></a></div>
-                <div><a href="chaton_big.jpg" data-lightbox="bravo"><img src="chaton_icon.jpg" alt=""></a></div>
-                <div><a href="chaton_big.jpg" data-lightbox="bravo"><img src="chaton_icon.jpg" alt=""></a></div>
-                <div><a href="chaton_big.jpg" data-lightbox="bravo"><img src="chaton_icon.jpg" alt=""></a></div>
-                
-            </div><!-- /.gallery -->
+				<div><a href="chaton_big.jpg" data-lightbox="bravo"><img src="chaton_icon.jpg" alt=""></a></div>
+				<div><a href="chaton_big.jpg" data-lightbox="bravo"><img src="chaton_icon.jpg" alt=""></a></div>
+				<div><a href="chaton_big.jpg" data-lightbox="bravo"><img src="chaton_icon.jpg" alt=""></a></div>
+				<div><a href="chaton_big.jpg" data-lightbox="bravo"><img src="chaton_icon.jpg" alt=""></a></div>
+				<div><a href="chaton_big.jpg" data-lightbox="bravo"><img src="chaton_icon.jpg" alt=""></a></div>
+				
+			</div><!-- /.gallery -->
  
-        </section>
+		</section>
 
-        <section id="Charlie" class="scrollspy">
-            <h1>Charlie
-                <a href="#top" class="topNav">↑</a>
-            </h1>
-        </section>
+		<section id="Charlie" class="scrollspy">
+			<h1>Charlie
+				<a href="#top" class="topNav">↑</a>
+			</h1>
+		</section>
  
-    </main>
+	</main>
 
 <!-- https://github.com/kimyvgy/simple-scrollspy?tab=readme-ov-file#using-simple-scrollspyminjs-file -->
 <!-- https://github.com/kimyvgy/simple-scrollspy/releases/download/v2.5.3/simple-scrollspy.min.js -->
 <script src="simple-scrollspy.min.js"></script>
 <script>
-    window.onload = function () {
-      scrollSpy('#main-menu', {
-        sectionClass: '.scrollspy',
-        menuActiveTarget: '.menu-item',
-        offset:0
-      })
-    }
+	window.onload = function () {
+	  scrollSpy('#main-menu', {
+		sectionClass: '.scrollspy',
+		menuActiveTarget: '.menu-item',
+		offset:0
+	  })
+	}
   </script>
 
 <link href="lightbox/css/lightbox.css" rel="stylesheet" />
