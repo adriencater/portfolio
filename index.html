@@ -68,19 +68,40 @@
 		</section>
  
 	</main>
-
+<!-- https://kimyvgy.github.io/simple-scrollspy/ -->
 <!-- https://github.com/kimyvgy/simple-scrollspy?tab=readme-ov-file#using-simple-scrollspyminjs-file -->
 <!-- https://github.com/kimyvgy/simple-scrollspy/releases/download/v2.5.3/simple-scrollspy.min.js -->
 <script src="simple-scrollspy.min.js"></script>
 <script>
 	window.onload = function () {
-	  scrollSpy('#main-menu', {
-		sectionClass: '.scrollspy',
-		menuActiveTarget: '.menu-item',
-		offset:0
-	  })
+		scrollSpy('#main-menu', {
+			sectionClass: '.scrollspy',
+			menuActiveTarget: '.menu-item',
+			offset: 0,
+			scrollContainer: null,
+		})
 	}
-  </script>
+</script>
+<!-- <script async src="dist/simple-scrollspy.min.js"></script>
+<script defer>
+	window.onload = function () {
+	scrollSpy("#mobile-menu-2", {
+		sectionClass: ".scrollspy",
+		menuActiveTarget: "li > a.block",
+		offset: 100,
+		// scrollContainer: null,
+		// smooth scroll
+		smoothScroll: true,
+		smoothScrollBehavior: function (element) {
+		console.log('run "smoothScrollBehavior"...', element);
+		element.scrollIntoView({ behavior: "smooth" });
+		},
+		onActive: (el) => {
+		console.log('run "onActive"...', el);
+		},
+	});
+	};
+</script> -->
 
 <link href="lightbox/css/lightbox.css" rel="stylesheet" />
 <script src="lightbox/js/lightbox-plus-jquery.js"></script>
