@@ -45,7 +45,8 @@ a.topNav{
 	font-size: 1rem;
 	position: absolute;
 	right: 2rem;
-	top: 1rem;
+	top: -2.5rem;
+	z-index: 99;
 }
 /* section{ padding-top: 3rem; } */
 
@@ -55,7 +56,10 @@ nav {
 	z-index: 99;
 }
 
-.active { background-color: magenta; }
+.active { background-color: #0009; }
+
+
+
 
  /* - - - - - - - - - - - - - - - - - - - - - - - - */
 /* - - MISE EN PAGE - - - - - - - - - - - - - - -  */
@@ -75,8 +79,14 @@ nav {
 
 
 section{
-	border-top: 1px solid white;
+	padding-top: 3rem;
 	min-height: 100vh;
+	position: relative;
+}
+section:before{
+	display: block;
+	content: "";
+	border-top: 1px solid white;
 }
 
 

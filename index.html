@@ -25,15 +25,15 @@
 
 	</header>
 
-	<nav id="main-menu">
-		<a href="#Alpha" class="menu-item">Alpha</a>
-		<a href="#Bravo" class="menu-item">Bravo</a>
-		<a href="#Charlie" class="menu-item">Charlie</a>
+	<nav id="tocMenu">
+		<a href="#Alpha" class="tocMenu-item">Alpha</a>
+		<a href="#Bravo" class="tocMenu-item">Bravo</a>
+		<a href="#Charlie" class="tocMenu-item">Charlie</a>
 	</nav>
 
 	<main>
 
-		<section id="Alpha" class="scrollspy">
+		<section id="Alpha" class="tocItem">
 			<h1>Alpha
 				<a href="#top" class="topNav">↑</a>
 			</h1>
@@ -44,7 +44,7 @@
 			</div>
 		</section>
 
-		<section id="Bravo" class="scrollspy">
+		<section id="Bravo" class="tocItem">
 			<h1>Bravo
 				<a href="#top" class="topNav">↑</a>
 			</h1>
@@ -61,7 +61,7 @@
  
 		</section>
 
-		<section id="Charlie" class="scrollspy">
+		<section id="Charlie" class="tocItem">
 			<h1>Charlie
 				<a href="#top" class="topNav">↑</a>
 			</h1>
@@ -74,10 +74,11 @@
 <script src="simple-scrollspy.min.js"></script>
 <script>
 	window.onload = function () {
-		scrollSpy('#main-menu', {
-			sectionClass: '.scrollspy',
-			menuActiveTarget: '.menu-item',
-			offset: 0,
+		console.log("fuck fuck fuck scrollSpy")
+		scrollSpy('#tocMenu', {
+			sectionClass: '.tocItem',
+			menuActiveTarget: 'tocMenu-item',
+			offset: 100,
 			scrollContainer: null,
 		})
 	}
