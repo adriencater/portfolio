@@ -25,15 +25,15 @@
 
 	</header>
 
-	<nav id="tocMenu">
-		<a href="#Alpha" class="tocMenu-item">Alpha</a>
-		<a href="#Bravo" class="tocMenu-item">Bravo</a>
-		<a href="#Charlie" class="tocMenu-item">Charlie</a>
+	<nav id="navMenu">
+		<a href="#Alpha" class="navMenu-item">Alpha</a>
+		<a href="#Bravo" class="navMenu-item">Bravo</a>
+		<a href="#Charlie" class="navMenu-item">Charlie</a>
 	</nav>
 
 	<main>
 
-		<section id="Alpha" class="tocItem">
+		<section id="Alpha" class="navItem">
 			<h1>Alpha
 				<a href="#top" class="topNav">↑</a>
 			</h1>
@@ -44,7 +44,7 @@
 			</div>
 		</section>
 
-		<section id="Bravo" class="tocItem">
+		<section id="Bravo" class="navItem">
 			<h1>Bravo
 				<a href="#top" class="topNav">↑</a>
 			</h1>
@@ -61,49 +61,41 @@
  
 		</section>
 
-		<section id="Charlie" class="tocItem">
+		<section id="Charlie" class="navItem">
 			<h1>Charlie
 				<a href="#top" class="topNav">↑</a>
 			</h1>
 		</section>
  
 	</main>
-<!-- https://kimyvgy.github.io/simple-scrollspy/ -->
-<!-- https://github.com/kimyvgy/simple-scrollspy?tab=readme-ov-file#using-simple-scrollspyminjs-file -->
-<!-- https://github.com/kimyvgy/simple-scrollspy/releases/download/v2.5.3/simple-scrollspy.min.js -->
-<script src="simple-scrollspy.min.js"></script>
-<script>
-	window.onload = function () {
-		console.log("fuck fuck fuck scrollSpy")
-		scrollSpy('#tocMenu', {
-			sectionClass: '.tocItem',
-			menuActiveTarget: 'tocMenu-item',
-			offset: 100,
-			scrollContainer: null,
-		})
-	}
-</script>
-<!-- <script async src="dist/simple-scrollspy.min.js"></script>
-<script defer>
-	window.onload = function () {
-	scrollSpy("#mobile-menu-2", {
-		sectionClass: ".scrollspy",
-		menuActiveTarget: "li > a.block",
-		offset: 100,
-		// scrollContainer: null,
-		// smooth scroll
-		smoothScroll: true,
-		smoothScrollBehavior: function (element) {
-		console.log('run "smoothScrollBehavior"...', element);
-		element.scrollIntoView({ behavior: "smooth" });
-		},
-		onActive: (el) => {
-		console.log('run "onActive"...', el);
-		},
-	});
-	};
-</script> -->
 
+	<script>
+		//https://www.geeksforgeeks.org/javascript/scrollspy-using-html-css-and-javascript/
+		//https://github.com/kristijan-pajtasev/SimpleScrollSpy/blob/master/scrollspy.js
+		document.addEventListener('DOMContentLoaded', function () {
+			const navbarLinks = document.querySelectorAll('.navMenu-item');
+			const sections = document.querySelectorAll('.navItem');
+			const scrollSpyOffset = 300;
+
+			window.addEventListener('scroll', function () {
+				const currentPos = window.scrollY;
+
+
+				sections.forEach(function (section) {
+					const sectionTop = section.offsetTop;
+					const sectionHeight = section.offsetHeight;
+					const sectionId = section.getAttribute('id');
+
+					if (currentPos - scrollSpyOffset >= sectionTop && currentPos < sectionTop + sectionHeight) {
+						navbarLinks.forEach(function (navbarLink) {
+							navbarLink.classList.remove('active');
+						});
+						document.querySelector('#navMenu a[href="#' + sectionId + '"]').classList.add('active');
+					}
+				});
+			});
+		});
+	</script>
 <link href="lightbox/css/lightbox.css" rel="stylesheet" />
 <script src="lightbox/js/lightbox-plus-jquery.js"></script>
 
