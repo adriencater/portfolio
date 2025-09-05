@@ -72,14 +72,15 @@
 	<script>
 		//https://www.geeksforgeeks.org/javascript/scrollspy-using-html-css-and-javascript/
 		//https://github.com/kristijan-pajtasev/SimpleScrollSpy/blob/master/scrollspy.js
+
+
 		document.addEventListener('DOMContentLoaded', function () {
-			const navbarLinks = document.querySelectorAll('.navMenu-item');
-			const sections = document.querySelectorAll('.navItem');
-			const scrollSpyOffset = 300;
+			const navbarLinks = document.querySelectorAll('.navMenu-item'); // ← ← ← <a class="navMenu-item"
+			const sections = document.querySelectorAll('.navItem'); // ← ← ← <section class="navItem"
+			const scrollSpyOffset = 300; // scroll offset until 'active'
 
 			window.addEventListener('scroll', function () {
 				const currentPos = window.scrollY;
-
 
 				sections.forEach(function (section) {
 					const sectionTop = section.offsetTop;
@@ -89,7 +90,8 @@
 					if (currentPos - scrollSpyOffset >= sectionTop && currentPos < sectionTop + sectionHeight) {
 						navbarLinks.forEach(function (navbarLink) {
 							navbarLink.classList.remove('active');
-						});
+						});	
+						//	nav id="#navMenu" ↓ ↓ ↓
 						document.querySelector('#navMenu a[href="#' + sectionId + '"]').classList.add('active');
 					}
 				});
