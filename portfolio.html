@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+
+	<!-- https://mozilla.github.io/pdf.js/ -->
+	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/5.4.149/pdf.min.mjs"></script> -->
+	<script src="pdf-js/pdf.mjs"></script>
+
+	<!-- https://github.com/SpotTune/pdf-js-flipbook -->
+	<link rel="stylesheet" href="pdf-js/flipbook.css" />
+	<script src="pdf-js/flipbook.js"></script>
+
+
+</head>
+<body>
+	<h1><a href="index.html">Jean Némarr</a>: Portfolio</h1>
+
+	<div id="Portfolio"></div>
+	<script>
+		const fb = Flipbook.mount({ target: '#Portfolio', pdfUrl: 'Jean-Nemarr_Portfolio.pdf', breakpoint: 820 });
+		fb.singleMode(false);
+		window.fb = fb;
+	</script>
+
+</body>
+</html>
+
