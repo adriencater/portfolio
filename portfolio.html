@@ -3,28 +3,47 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
+	<title>Jean-Némarr Portfolio</title>
 
-	<!-- https://mozilla.github.io/pdf.js/ -->
-	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/5.4.149/pdf.min.mjs"></script> -->
-	<script src="pdf-js/pdf.mjs"></script>
+	<link rel="stylesheet" href="style.css">
+
+
+	<!-- https://cdnjs.cloudflare.com/ajax/libs/pdf.js/5.4.149/pdf.min.mjs -->
 
 	<!-- https://github.com/SpotTune/pdf-js-flipbook -->
-	<link rel="stylesheet" href="pdf-js/flipbook.css" />
-	<script src="pdf-js/flipbook.js"></script>
 
+	<style>
+		#Portfolio{ margin-top: 5rem; }
+
+		.flipbook-book { 
+			background: unset !important;
+			box-shadow: unset !important;
+
+			background: linear-gradient(#FFF1, #FFF3) !important;
+		}
+	</style>
 
 </head>
 <body>
-	<h1><a href="index.html">Jean Némarr</a>: Portfolio</h1>
+
+	<h2> <a href="index.html">Jean-Némarr</a> Portfolio</h2>
+
+
+	<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/SpotTune/pdf-js-flipbook@v1.2.0/dist/flipbook.css"> -->
+		<link rel="stylesheet" href="pdf-js/flipbook.css">
+	<!-- <script src="https://cdn.jsdelivr.net/gh/SpotTune/pdf-js-flipbook@v1.2.0/dist/flipbook.js"></script> -->
+		<script src="pdf-js/flipbook.js"></script>
 
 	<div id="Portfolio"></div>
+
 	<script>
-		const fb = Flipbook.mount({ target: '#Portfolio', pdfUrl: 'Jean-Nemarr_Portfolio.pdf', breakpoint: 820 });
-		fb.singleMode(false);
-		window.fb = fb;
+		const fb = Flipbook.mount({
+			target: '#Portfolio',
+			pdfUrl: 'Jean-Nemarr_Portfolio.pdf'
+		});
+		fb.singleMode(false);     // force double-page
 	</script>
 
+	
 </body>
 </html>
-
